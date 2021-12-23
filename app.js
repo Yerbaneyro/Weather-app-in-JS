@@ -1,2 +1,18 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
+const notificationelem = document.querySelector(".notification");
+const iconelem = document.querySelector(".weather_icon");
+const temperatureelem = document.querySelector(".temperature p");
+const tempdescriptionelem = document.querySelector(".temperature_description p");
+const locationelem = document.querySelector(".location p");
+
+const weather = {
+
+    temperature : {
+        value : 18,
+        unit : "celsius"
+    },
+
+    description : "few clouds",
+    iconId : "01d",
+    city : "London",
+    country : "GB"
+};
