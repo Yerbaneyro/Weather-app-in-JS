@@ -17,13 +17,13 @@ body{
     padding-bottom : 50px;
 }
 
-.app-title{
+.title{
     width: 300px;
     height: 50px;
     border-radius: 10px 10px 0 0;
 }
 
-.app-title p{
+.title h2{
     text-align: center;
     padding: 15px;
     margin: 0 auto;
@@ -44,28 +44,28 @@ body{
     padding: 10px 0;
 }
 
-.weather-container{
+.weather_container{
     width: 300px;
     height: 260px;
     background-color: #F4F9FF;
 }
 
-.weather-icon{
+.weather_icon{
     width: 300px;
     height: 128px;
 }
 
-.weather-icon img{
+.weather_icon img{
     display: block;
     margin: 0 auto;
 }
 
-.temperature-value{
+.temperature{
     width: 300px;
     height:60px;
 }
 
-.temperature-value p{
+.temperature p{
     padding: 0;
     margin: 0;
     color: #293251;
@@ -74,20 +74,20 @@ body{
     cursor: pointer;
 }
 
-.temperature-value p:hover{
+.temperature p:hover{
     
 }
 
-.temperature-value span{
+.temperature span{
     color: #293251;
     font-size: 0.5em;
 }
 
-.temperature-description{
+.temperature_description{
     
 }
 
-.temperature-description p{
+.temperature_description p{
     padding: 8px;
     margin: 0;
     color: #293251;
