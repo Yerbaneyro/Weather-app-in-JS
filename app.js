@@ -3,8 +3,8 @@ const notificationelem = document.querySelector(".notification");
 const iconelem = document.querySelector(".weather_icon");
 const temperatureelem = document.querySelector(".temperature p");
 const tempdescriptionelem = document.querySelector(".temperature_description p");
-const locationelem = document.querySelector(".location p");
-
+const locationelem = document.querySelector(".location h2");
+const dateelem = document.querySelector(".date p")
 //APP
 const weather = {};
 
@@ -15,6 +15,7 @@ weather.temperature = {
 
 //APP CONSTS and VARS
 const KELVIN = 273;
+
 
 //API KEY
 const key = "08cedafadf5af89252f0585c1ece9d09";
@@ -86,18 +87,10 @@ temperatureelem.addEventListener("click", function(){
         }
 })
 
-// NOTES
-
-//     temperature : {
-//         value : 18,
-//         unit : "celsius"
-//     },
-
-//     description : "few clouds",
-//     iconId : "01d",
-//     city : "London",
-//     country : "GB"
-
+// DATE VALUE
+let now = new Date();
+let today = `${now.getDate()} / ${now.getMonth()+1} / ${now.getFullYear()}`;
+dateelem.innerHTML = today
 
 
 
